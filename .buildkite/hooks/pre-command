@@ -24,3 +24,6 @@ if [ -d "/tmp/artifacts" ]; then
     echo "Artifact directory contents after cleanup:"
     find /tmp/artifacts -print || true
 fi
+
+RAYCI_WORK_REPO="$(pwd)"
+export RAYCI_WORK_REPO
